@@ -1,0 +1,380 @@
+/* Mise en place des polices LiberationSans */
+@font-face {
+    font-family: LiberationSansRegular;
+    src: url(../Sujet-01/fonts/LiberationSans-Regular-webfont.ttf);
+  }
+  
+@font-face {
+    font-family: LiberationSansBold;
+    src: url(../Sujet-01/fonts/LiberationSans-Bold-webfont.ttf);
+  }
+
+/* Réinitialisation de la marge du body */
+body {
+    margin: 0;
+}
+
+/* Retrait de la mise en forme des liens et création d'un hover sur les liens*/
+a {
+    text-decoration: none;
+    color : inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color : #EA9F05;
+}
+
+/* HEADER */
+/* Ajustement du padding du header, placement des éléments avec display et justify-content, établissement du fond et de la police */
+header {
+    display: flex;
+    background-color: #ececec;
+    justify-content: space-between;
+    padding: 2% 20% 0 20%;
+    font-family: LiberationSansRegular, sans-serif;
+}
+
+/* Mise en place de la taille du logo */
+#logo {
+    width : 14rem;
+}
+
+/* Création de la couleur doré pour la 2e partie de la baseline */
+#baseline span {
+    color : #EA9F05;
+}
+
+/* Placement des éléments de la nav avec display et justify-content */
+#nav-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    width: -webkit-fill-available;
+}
+
+/* Alignement à droite du hello-user, qui affiche Bonjour (...) */
+#hello-user {
+    text-align: right;
+}
+
+/* Reinitialisation des paramètres de style de la liste non ordonnée et placement des éléments avec display et justify-content + taille du texte*/
+#nav-div nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8em;
+}
+
+/* Création d'une marge entre chaque occurence de la liste et ajustement de la taille */
+#nav-div nav li {
+    margin-left: 7%;
+    width: max-content;
+}
+
+
+
+/* MAIN */
+
+/* SECTION CATALOGUE */
+
+/* Ajustement du padding du main, placement des éléments avec display et flex-direction + align items, établissement du fond et de la police */
+main {
+    padding: 1% 20% 0 20%;
+    position : relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c1c;
+    font-family: LiberationSansRegular, sans-serif;
+}
+
+/* Ajustement de la taille de l'image au début du main */
+#header-page-catalogue {
+    width: -webkit-fill-available;
+}
+
+/* Etablissement de la couleur de fond du catalogue, placement des éléments, ajustement de la section pour supprimer la bande noire entre le header et le main */
+#catalogue {
+    position : relative;
+    top: -0.3rem;
+    background-color: #ececec;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 15%;
+}
+
+/* Ajustement de chaque article au niveau de la position et de la taille */
+.article {
+    position: relative;
+    margin: 1%;
+    padding-top: 5%;
+    width: 33%;
+}
+
+/* Ajustement de la taille de l'image de l'article */
+.article-img img{
+    width: 100%;
+}
+
+/* Ajustement de la position du texte descriptif de l'article + taille texte + mise en place du texte en capitales avec uppercase */
+.article-text {
+    position: relative;
+    bottom: 2.5em;
+    font-size: 0.7em;
+    text-align: center;
+    width: -webkit-fill-available;
+    text-transform: uppercase;
+}
+
+/* Mise en place du carré avec l'affichage de la promo, couleur fond, placement, police du texte */
+.article-promo {
+    font-family: LiberationSansBold, sans-serif;
+    background-color: #1c1c1c;
+    color: #EA9F05;
+    font-size: 1.2em;
+    padding: 2% 5% 2% 5%;
+    border-radius: 5px;
+    width: min-content;
+    position: absolute;
+    top : 15%;
+    right : -10%;
+}
+
+/* Placement des éléments de la div du détail article qui compose le CTA (voir la vente) et les prix */
+.article-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Ajustement de la taille du CTA, taille du texte et fond */
+.article-cta {
+    background-color: #1c1c1c;
+    width: max-content;
+    font-size: 0.8em;
+    padding: 1% 7% 1% 7%;
+}
+
+/* Modification de la couleur du texte + hover pour remettre couleur dorée */
+.article-cta a {
+    color:#ececec;
+}
+
+.article-cta a:hover {
+    color:#EA9F05;
+}
+
+/* Ajustement de la police, sa taille et la décoration pour le prix barré */
+.article-prix-initial {
+    font-family: LiberationSansBold, sans-serif;
+    text-decoration: line-through;
+    font-size: 1.2em;
+}
+
+/* Ajustement de la police, taille et couleur du prix en promo */
+.article-prix-promo {
+    font-family: LiberationSansBold, sans-serif;
+    color: #EA9F05;
+    font-size: 1.2em;
+}
+
+/* SECTION A PROPOS */
+
+/* Etablissement de la couleur de fond de la section à promos, placement des éléments, ajustement de la section pour supprimer la bande noire entre le header et le main */
+#a-propos {
+    padding: 1% 2% 1% 2%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 0.5em;
+    position: absolute;
+    top: 97.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 280px;
+    z-index: 1;
+}
+
+/* Ajustement de la marge des div dans la section */
+#a-propos div {
+    margin-left: 1%;
+}
+
+/* Création des ronds séparateurs entre chaque div comportant du texte */
+.rond {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #d2d2d2;
+}
+
+/* FOOTER */
+
+/* Ajustement du padding du footer, placement des éléments avec display et justify-content, établissement du fond et de la police */
+footer {
+    background-color: #373737;
+    position : relative;
+    top: -0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustement du padding des div des icons et disposition avec display flex */
+#icon {
+    padding: 4% 20% 0 20%;
+    display: flex;
+}
+
+/* Ajustement de la taille des images des icons */
+#icon img {
+    width: 40%;
+}
+
+/* Ajustement du placement des divs au sein de la section icon */
+#icon div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2% 0 2%;
+}
+
+/* Ajustement de la couleur des zones de texte dans la section icon */
+#icon div p {
+    color: #d2d2d2;
+    text-align: center;
+    font-size: 0.5em;
+    margin-top: 10%;
+}
+
+/* Création et placement du trait de séparation entre les icons et les réseaux sociaux */
+#trait {
+    width: -webkit-fill-available;
+    height: 2px;
+    background-color: #d2d2d2;
+    margin: 2% 20% 2% 20%;
+}
+
+/* Placement de la section des réseaux sociaux */
+#rs {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Placement des div de la section des réseaux sociaux */
+#rs div {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Placement de la section Copyright */
+#copyright {
+    color: white;
+    font-size: 0.8em;
+    padding: 2% 0 2% 0;
+}
+
+/* Media Query pour écran <576px */
+
+@media screen and (max-width: 576px) {
+
+/* HEADER */
+
+/* Modification du placement + padding du header */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 0 0 0;
+    }
+
+/* Recentrage de la baseline */
+    #baseline {
+        text-align: center;
+    }
+
+/* Replacement des div de la nav */
+    #nav-div{
+        padding: 0 5% 0 5%;
+        display: flex;
+    }
+
+/* Replacement du hello-user à gauche */
+    #hello-user{
+        display: flex;
+        align-items: flex-start;
+    }
+
+/* Ajustement de l'espacement de la liste mise en place dans la nav */
+    #nav-div nav ul {
+        justify-content: space-between;
+        padding: 2% 0 2% 0;
+    }
+
+/* Ajustement de la marge des éléments de la liste */
+    #nav-div nav ul li{
+        margin-left: 0;
+    }
+
+/* MAIN */
+/* Ajustement du padding du main */
+main {
+    padding: 5% 5% 0 5%;
+}
+
+/* SECTION CATALOGUE */
+/* Ajustement de la taille de chaque div article */
+    .article {
+        width: 55%;
+    }
+
+/* SECTION A PROPOS */
+/* Ajustement de la position + padding de la section + Modification de la taille de police */
+    #a-propos {
+        padding: 2% 2% 2% 2%;
+        font-size: 0.6em;
+        top: 98.7%;
+        width: 450px;
+    }
+
+/* FOOTER */
+/* Ajustement de la position + padding du footer */
+    #icon {
+        padding: 8% 5% 0 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+/* Ajustement de la taille des div icons */
+    #icon div{
+        width: 40%;
+    }
+
+/* Ajustement de la police de texte dans les div icons */
+    #icon div p {
+        font-size: 0.6em;
+    }
+
+/* Ajustement de la taille des images dans les div icons */
+    #icon img {
+        width: 25%;
+    }
+
+/* Ajustement du trait séparateur */
+    #trait{
+        margin: 2% 5% 5% 5%;
+    }
+
+/* Ajustement du padding de la section copyright */
+    #copyright{
+        padding: 5% 0 5% 0;
+    }
+
+  }
